@@ -1,5 +1,5 @@
 # SalesLoft Client
-
+[![Cypress tests](https://github.com/JohnPersano/salesloft-client/actions/workflows/cypress.yml/badge.svg?branch=main)](https://github.com/JohnPersano/salesloft-client/actions/workflows/cypress.yml)
 
 ## Getting Started
 
