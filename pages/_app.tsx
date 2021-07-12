@@ -2,7 +2,7 @@
 
 import "normalize.css";
 import "tailwindcss/tailwind.css";
-import Head from "next/head";
+import { RecoilRoot } from "recoil";
 
 
 export default function MyApp({ Component, pageProps }) {
@@ -10,18 +10,17 @@ export default function MyApp({ Component, pageProps }) {
     // noinspection HtmlUnknownTarget
     return (
 
-        <div>
+        <RecoilRoot>
 
-            <Head>
-                <title>SalesLoft Client</title>
-                <link rel="icon" href="/favicon.ico"/>
-            </Head>
+            <div>
 
-            <main>
-                <Component { ...pageProps } />
-            </main>
+                <main>
+                    <Component { ...pageProps } />
+                </main>
 
-        </div>
+            </div>
+
+        </RecoilRoot>
 
     )
 
